@@ -1,73 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="/umi.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>吐鲁番市万泉供排水公司压力监控系统</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="/jsoneditor.css" rel="stylesheet" type="text/css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.7.0/echarts.min.js"></script>
-  <script src="https://echarts.baidu.com/resource/echarts-liquidfill-latest/dist/echarts-liquidfill.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
-  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kn3k02Qv2zErZL4rSUpkhbvSGriEP2NH"></script>
-  <script type="text/javascript"
-          src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
-  <style>body {
-    background: #061436;
-  }
+<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="/umi.css"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>吐鲁番市万泉供排水公司压力监控系统</title><link rel="icon" href="/favicon.ico" type="image/x-icon"><link href="/jsoneditor.css" rel="stylesheet" type="text/css"><script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.7.0/echarts.min.js"></script><script src="https://echarts.baidu.com/resource/echarts-liquidfill-latest/dist/echarts-liquidfill.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script><script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kn3k02Qv2zErZL4rSUpkhbvSGriEP2NH"></script><script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script><style>body{
+      background: #061436;
+    }
+    body>img{
+      z-index: 1;
+      position: absolute;
+      transform: translate(-50%,-50%)  rotate(0deg);
+      left: 50%;
+      top: 50%;
+      animation:xz1 8s  linear;
+    }
+    body>img:nth-of-type(2){
+      animation:xz2 8s  linear;
+    }
 
-  body > img {
-    z-index: 1;
-    position: absolute;
-    transform: translate(-50%, -50%) rotate(0deg);
-    left: 50%;
-    top: 50%;
-    animation: xz1 8s linear;
-  }
+    @keyframes xz1 {
+      from {
+        transform:translate(-50%,-50%) rotate(0deg);
+      }
+      50% {
+        transform:translate(-50%,-50%) rotate(180deg);
+      }
+      to {
+        transform:translate(-50%,-50%) rotate(360deg);
+      }
+    }
 
-  body > img:nth-of-type(2) {
-    animation: xz2 8s linear;
-  }
-
-  @keyframes xz1 {
-    from {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(180deg);
-    }
-    to {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
-  }
-
-  @keyframes xz2 {
-    from {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(-180deg);
-    }
-    to {
-      transform: translate(-50%, -50%) rotate(-360deg);
-    }
-  }</style>
-  <script>window.BMap = BMap;</script>
-  <script>window.routerBase = '/';</script>
-</head>
-<body>
-<link rel="stylesheet/less" type="text/css" href="/color.less"/>
-<script>
-  window.less = {
-    async: false,
-    env: 'production',
-  };
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
-<!--<img src="/img/loading1.png" alt="">
-<img src="/img/loading2.png" alt="">-->
-<div id="root"></div>
-<script src="/umi.js"></script>
-</body>
-</html>
+    @keyframes xz2 {
+      from {
+        transform:translate(-50%,-50%) rotate(0deg);
+      }
+      50% {
+        transform:translate(-50%,-50%) rotate(-180deg);
+      }
+      to {
+        transform:translate(-50%,-50%) rotate(-360deg);
+      }
+    }</style><script>window.BMap=BMap;</script><script>window.routerBase = "/";</script></head><body>
+    <link rel="stylesheet/less" type="text/css" href="/color.less" />
+    <script>
+      window.less = {
+        async: false,
+        env: 'production'
+      };
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+        <!--<img src="/img/loading1.png" alt="">
+<img src="/img/loading2.png" alt="">--><div id="root"></div><script src="/umi.js"></script></body></html>
